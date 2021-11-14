@@ -6,14 +6,15 @@
         <meta name="viewport" content="width=device-width", user-scalable=no, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0>
         <link href="css/css.css" rel="stylesheet" type="text/css" media="" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
     </head>
     <body>
       <header class="main-header">
-          <div class="container container--flex">
-              <div class="main-header__container">
+        <div class="container container--flex">
+             <div class="main-header__container">
                 <h1 class="main-header__title">NaruStore</h1>
-                <span class="fas fa-bars"></span>
-                <nav class="main-nav">
+                <span class="icon-menu fas fa-bars" id="btn-menu"></span>
+                <nav class="main-nav" id="main-nav">
                     <ul class="menu">
                         <li class="menu__item"><a href="" class="menu__link">Home</a></li>
                         <li class="menu__item"><a href="" class="menu__link">About</a></li>
@@ -26,17 +27,34 @@
 
             <div class="main-header__container">
                <span class="main-header__txt">¿Ayuda?</span>
-               <p class="main-header__txt">Celular 3175662576</p>
+               <p class="main-header__txt"><i class="fas fa-phone"></i>Celular 3175662576</p>
             </div>
 
             <div class="main-header__container">
                 <i class="fas fa-user"></i>
-                <a href="">Carrito <i class="fas fa-shopping-cart"></i></a>
-                <input type="search"><i class="fas fa-search"></i>
+                <a href="" class="main-header__btn">Carrito <i class="fas fa-shopping-cart"></i></a>
+                <input type="search" class="main-header__input" placeholder="Buscar producto"><i class="fas fa-search"></i>
             </div>
-
-          </div>
-
+         </div>
       </header>
+      <div class="container-slider">
+          <div class="slider" id="slider">
+              <div class="slider__section">
+                <img src="https://i.ytimg.com/vi/PV11eU-rISU/maxresdefault.jpg" alt="" class="slider__img">
+              </div>
+              <div class="slider__section">
+                <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2017/05/naruto_0.jpg?itok=ZvSvUPDL" alt="" class="slider__img">
+              </div>
+              <div class="slider__section">
+                <img src="https://www.formulatv.com/images/series/posters/100/135/dest_1.jpg" alt="" class="slider__img">
+              </div>
+              <div class="slider__section">
+                <img src="https://cdn.alfabetajuega.com/wp-content/uploads/2020/12/naruto-okay.jpg" alt="" class="slider__img">
+              </div>
+          </div>
+          <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+          <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+      </div>
+      <script src="js/slider.js"></script>
     </body>
 </html>
